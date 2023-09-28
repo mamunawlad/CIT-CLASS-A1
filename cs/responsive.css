@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    #banner .slide{
+    height: 500px;
+    }
+    #banner .slide h2 {
+        font-size: 45px;
+        
+    }
+    #banner .bannerDots {
+        display: none !important;
+    }  
+}

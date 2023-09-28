@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+
+/** common css start here */
+:root{
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--primaryFont);
+}
+
+#banner .slide *{
+transform: translateY(80px);
+opacity: 0;
+visibility: hidden;
+transition: 0.5s ease-in;
+}
+#banner .slide.slick-active *{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;   
+}
+/** common css end here */
+
+/**
+** WEBSITE NAME = AYTOR ECOMMERCE
+** DEVELOPER NAME = MD.AWLAD HOSSAIN
+** DEVELOPER URI =
+** LI NO. = 
+* * 1. HOME
+      * navbar
+      * banner
+      * service
+      
+*/
+/* HOME START HERE*/
+/* NAVBAR START HERE*/
+.myCustomNav .iconGroup li{
+    display: inline-block;
+}
+.sm_navbar .iconGroup li a span,
+.sm_navbar .iconGroup li a,
+.myCustomNav .iconGroup li span,
+.myCustomNav .iconGroup li a{
+    color: #151A32;
+    margin: 0 10PX;
+    position: relative;
+    font-size: 24px;
+}
+.sm_navbar .iconGroup li a span.cartNumber,
+.myCustomNav .iconGroup li a span.cartNumber{
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-align: center;
+    line-height: 17px;
+    position: absolute;
+    top: -5px;
+    right: -17px;
+    font-size: 14px;
+
+}
+.myCustomNav #navManue ul li{
+    position: relative;
+}
+ 
+.myCustomNav #navManue ul li a{
+padding: 37px 22px;
+color: #11161E;
+font-family: Josefin Sans;
+font-size: 16px;
+line-height: 26px;
+
+}
+.myCustomNav #navManue ul li:hover a{
+    color: var(--primaryColor);
+}
+.dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;  
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+}
+
+.dropdown_menu{
+    display: none;
+    color: blue;
+}
+.myCustomNav #navManue ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(75, 71, 83);    
+}
+
+.sm_navbar .menu button{
+    border: none;
+    font-size: 24px;
+    background-color: white;
+}
+.sm_navbar .smMenu ul li a{
+color: #11161E;
+padding: 15PX 10PX;
+display: inline-block;
+border-bottom: 1px solid #ccc;
+}
+.sm_navbar .smMenu ul li:last-child a{
+    border: none;
+}
+
+/* NAVBAR ENDS HERE*/
+/*MAIN SECTION START HERE*/
+/*BANNER START HERE*/
+
+#banner .slide{
+    height: 800px;
+   }
+.slide h3{
+color: #1D1D1D;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 28px;
+ word-wrap: break-word
+}
+#banner .slide h2{
+color: #1D1D1D;
+ font-size: 64px;
+ margin: 14px 0 16px;
+ font-weight: 700;
+ line-height: 74px;
+ transition-delay: 0.1s;
+ word-wrap: break-word
+ 
+}
+#banner .slide p{
+color: #1D1D1D;
+ font-size: 16px;
+ font-family: var(--secondaryFont);
+ font-weight: 400;
+ line-height: 28px;
+ transition-delay: 0.2s;
+ word-wrap: break-word
+}
+#banner .slide a{
+background-color: var(--primaryColor);
+margin-top: 29px;
+padding: 13px 37px;
+display: inline-block;
+ color: white;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 30px;
+ transition-delay: 0.3s;
+ word-wrap: break-word
+}
+#banner .slide a span.arrow{
+padding-bottom: px;
+display: inline-block;
+}
+#banner .bannerDots{
+    position: absolute;
+    bottom: 26%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#banner .bannerDots li{
+    display: inline-block;
+}
+#banner .bannerDots li button{
+    border: none;
+    color: transparent;
+    width: 11px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #11161E;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+#banner .bannerDots li.slick-active button{
+    width: 28.5px;
+    background-color: var(--primaryColor);
+}
+
+/*BANNER ENDS HERE*/
+
+/*FEATURED CATEGOREY  START  HERE*/
+
+#featuredCategory{
+    padding: 60px 0;
+}
+#featuredCategory .category img{
+    width: 100%;
+}
+#featuredCategory .category{
+    position: relative;
+}
+.category .overlay{
+    position: absolute;
+    background-color: rgba(17, 21, 29, 0.4 );
+    inset: 20px;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+}
+.category:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.category .overlay *{
+    color: white;
+}
+
+/*FEATURED CATEGOREY  ENDS  HERE*/
+
+/*NEW  PRODUCT SECTION START  HERE*/
+
+#newProduct{
+    padding: 35px 0;
+}
+
+.productImg img{
+    width: 100%;
+    display: block;
+}
+.productImg{
+    position: relative;
+}
+.productImg .label{
+    position: absolute;
+    background-color: var(--primaryColor);
+    color: white;
+    transform: rotate(-90deg);
+    padding: 5px 7px 5px 12px;
+    border-radius: 25px 0 0 25px;
+    left: 14px;
+    top: 10px;
+    z-index: 99;
+}
+.productImg .overlay{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(17, 21, 29, 0.4 );
+    inset: 0;
+    transition: 0.2s ease-in;
+}
+.productImg .overlay ul{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.productImg .overlay ul li a{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #151A32;
+    display: block;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    transform: translateX(-50px);
+    transition: 0.45s ease;
+    opacity: 0;
+}
+.productSlide:hover .productImg .overlay ul li a{
+    transform: translateX(0);
+    opacity: 1;
+}
+.productSlide:hover .productImg .overlay{
+    opacity: 1;
+}
+.productImg .overlay ul li:hover a{
+    background-color: var(--primaryColor);
+    color: white;
+    opacity: 1;
+}
+.productImg .overlay ul li:nth-child(2) a{
+    transition-delay: 0.2s;
+}
+.productImg .overlay ul li:nth-child(3) a{
+    transition-delay: 0.3s;
+}
+.productImg .overlay ul li:nth-child(4) a{
+    transition-delay: 0.4s;
+}
+
+.product_Cnt{
+    text-align: center;
+    padding: 24PX 0;
+}
+.product_Cnt h4{
+    // $175.65
+color: #444444;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 26px;
+ word-wrap: break-word
+}
+.product_Cnt h2{
+    // Compact Face Powder
+    color: #11161E;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 28px;
+     word-wrap: break-word
+}
+.product_Cnt span{
+  font-size: 10px;
+  color: var(--primaryColor);
+}
+.productSlide{
+    padding: 0 25PX;
+}
+
+.container{
+    position: relative;
+}
+.leftArrows,
+.rightArrows{
+  position: absolute;
+  top: 50%;
+  background-color: #a6b3c7;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(-50%);
+
+}
+.leftArrows{
+  left: 3%;
+}
+.rightArrows{
+  right: 3%;
+}
+
+/*NEW  PRODUCT SECTION ENDS  HERE*/
+
+/*DISCOUNT SECTION START  HERE*/
+#discount{
+    margin: 50px 0;
+}
+#discount {
+    background-image: url(../images/discount.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+#discount .discount_cnt{
+    color: white;
+    text-align: left;
+    padding-left: 150px;
+    margin: 50px 0 50px 0;   
+    
+}
+
+#discount .discount_cnt h2{
+    // Get Up To 35% Off all<br/>Best
+    color: white;
+     font-size: 36px;
+     font-family: Josefin Sans;
+     font-weight: 700;
+     line-height: 46px;
+     word-wrap: break-word
+    ---
+    // zzzzzzzzzzzz
+    color: white;
+     font-size: 48px;
+     font-family: Josefin Sans;
+     font-weight: 700;
+     line-height: 58px;
+     word-wrap: break-word
+    ---
+    //  Spa Cosmetics<br/>Cream
+    color: white;
+     font-size: 36px;
+     font-family: Josefin Sans;
+     font-weight: 700;
+     line-height: 46px;
+     
+}
+#discount .discount_cnt p{
+    color: white;
+     font-size: 16px;
+     font-family: Roboto;
+     font-weight: 400;   
+     
+}
+
+#discount .discount_cnt a{
+background-color: var(--primaryColor);
+margin-top: 50px;
+padding: 13px 37px;
+display: inline-block;
+ color: white;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 30px;
+ transition-delay: 0.3s;
+ word-wrap: break-word
+}
+
+/*DISCOUNT SECTION ENDS  HERE*/
+
+/*BEST SELLER PRODUCT SECTION START  HERE*/
+#bestSellPdt{
+    margin-bottom: 100px;
+}
+#bestSellPdt .container h3{
+text-align: center;
+color: #11161E;
+ font-size: 36px;
+ font-weight: 700;
+ line-height: 46px;
+ padding: 50px 0 25px 0;
+ word-wrap: break-word
+}
+    #bestSellPdt .container{
+        text-align: center;
+    }
+    #bestSellPdt .button a{
+        background-color: var(--primaryColor);
+        color: white;
+        margin-top: 29px;
+        padding: 13px 37px;
+        display: inline-block;
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 28px;
+         transition-delay: 0.3s;
+         
+        }
+
+    
+/*BEST SELLER PRODUCT SECTION ENDS  HERE*/
+
+
+/*LETEST NEWS SECTION START  HERE*/
+
+#daydeals .container_dayd h3{
+    //styleName: Heading - H3;
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+#daydeals .container_dayd .container li{
+    box-shadow: 0px 0px 10px 0px #151A321A;
+
+}
+
+#daydeals .container{
+    background-color: #CACACA; 
+    
+
+  }
+  #daydeals .fairnessCream,
+  #daydeals .bodyLotions{
+    background-color: #A6AAB7;
+    padding-right: 0px;
+
+  }
+#daydeals .fairnessCream{
+width: 570px;
+height: 485px;
+top: 4342px;
+left: 339px;
+inset: 30px;
+margin: 50px 35px 50px 50px;
+}
+#daydeals .bodyLotions{
+    width: 570px;
+    height: 485px;
+    top: 4342px;
+    left: 339px;
+    inset: 30px;
+    margin: 50px 35px 50px 50px;   
+}
+  #daydeals h3{
+    margin-bottom: 50px;
+  }
+  #daydeals h2, h3{
+    text-align: center;
+}
+
+h2 li{
+    display: inline;
+    text-align: center;
+
+    
+
+}
+h2 ul{
+    
+    padding-bottom: 5px;
+    padding-top: 30px;
+    background-color: white;
+    text-align: center;
+    display: inline;
+    border: solid; 
+    border-radius: 0 0 10px 10px;
+
+    
+}
+#daydeals .container{
+    margin-bottom: 50px;
+}
+#daydeals .fairnessCream h6{
+    //styleName: Heading - H6;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .fairnessCream h2{
+    //styleName: Heading - H3;
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .fairnessCream p{
+    //styleName: Paragraph/body text;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .fairnessCream h6{
+    //styleName: Heading - H5;
+font-family: Josefin Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .fairnessCream h5 span{
+text-decoration: line-through;
+background-color: var(--primaryColor);
+}
+#daydeals .fairnessCream a{
+background-color: #151A32;
+margin-top: 29px;
+padding: 13px 37px;
+display: inline-block;
+ color: white;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 30px;
+ transition-delay: 0.3s;
+ word-wrap: break-word
+}
+
+
+
+
+
+
+#daydeals .bodyLotions h6{
+    //styleName: Heading - H6;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .bodyLotions h2{
+    //styleName: Heading - H3;
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .bodyLotions p{
+    //styleName: Paragraph/body text;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .bodyLotions h6{
+    //styleName: Heading - H5;
+font-family: Josefin Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#daydeals .bodyLotions h5 span{
+text-decoration: line-through;
+background-color: var(--primaryColor);
+}
+#daydeals .bodyLotions a{
+background-color: #151A32;
+margin-top: 29px;
+padding: 13px 37px;
+display: inline-block;
+ color: white;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 30px;
+ transition-delay: 0.3s;
+ word-wrap: break-word
+}
+
+
+#daydeals .daydealsDots{
+    position: absolute;
+    background-color: transparent;
+    bottom: 2%;
+    width: 100%;
+    left: 43%;
+    transform: translateX(5%);
+}
+#daydeals .daydealsDots li{
+    display: inline-block;
+}
+#daydeals .daydealsDots li button{
+     border: none;
+     color: transparent;
+     width: 10px;
+     height: 6px;
+     border-radius: 5px;
+     background-color: #A6AAB7;
+     margin-right: 5px;
+}
+#daydeals .daydealsDots li.slick-active button{
+    width: 28px;
+    background-color: #151A32;
+}
+  
+
+/*LETEST NEWS SECTION ENDS  HERE*/
+/*SPECIAL OFFER SECTION START  HERE*/
+
+/*SPECIAL OFFER SECTION ENDS HERE*/
+
+/*MAIN SECTION ENDS HERE*/
+
+
+
+/* HOME END HERE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

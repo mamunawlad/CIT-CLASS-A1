@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor Project</title>
+    <!--FONTAWESOME CSS-->
+    <link rel="stylesheet" href="./cs/all.min.css">
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="./cs/bootstrap.min.css">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="./cs/venobox.min.css">
+    <link rel="stylesheet" href="./cs/slick.css">
+    <link rel="stylesheet" href="./cs/style.css">
+    <link rel="stylesheet" href="./cs/responsive.css">
+</head>
+<body>
+   <!--NAVBAR START HERE--> 
+
+<nav class="navbar navbar-expand-lg myCustomNav d-none d-lg-block">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navManue" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navManue">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <div class="dropdown_menu">
+            <ul>
+              <li><a href="">pricing</a></li>
+              <li><a href="">pricing</a></li>
+              <li><a href="">pricing</a></li>
+              <li><a href="">pricing</a></li>
+              <li><a href="">pricing</a></li>
+            </ul>
+          </div>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+              </ul>
+            </div>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Features <i class="fa-solid fa-angle-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+              </ul>
+            </div>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Content</a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">pricing</a></li>
+              </ul>
+            </div>
+          
+          </li>
+       </ul>
+      
+    </div>
+
+    <div class="iconGroup">
+      <ul>
+          <li><span><i class="fa-solid fa-magnifying-glass"></i></span></li>
+          <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+          <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="">
+            <i class="fa-solid fa-bag-shopping"></i>
+          
+            <span class="cartNumber">0</span>
+          
+          </a>
+          
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+ <div class="sm_navbar d-lg-none py-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="menu col-2">
+        <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+          
+          <i class="fa-solid fa-align-left"></i></button>
+
+       
+
+        <!--SIDEBAR-->
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <a href=""><img src="./images/Logo.png"alt=""></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body smMenu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+           
+          </div>
+        </div>
+
+        <!--SIDEBAR END-->
+      </div>
+      <div class="logo text-center col-8">
+        <a href=""><img src="./images/Logo.png" alt=""></a>
+      </div>
+
+      <div class="iconGroup col-2">
+        <ul>
+          
+            <li><a href="">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="cartNumber">0</span>
+            
+            </a>
+            
+            </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+ <!--NAVBAR ENDS HERE--> 
+
+   <!--MAIN SECTION START  HERE--> 
+   <!--BANNER START  HERE-->
+   <section id="banner">
+            <div class="slide" style="background-image: url(./images/banner\ .png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="banner_cnt col-lg-5">
+                    <h3>Mega Sale</h3>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url(./images/banner\ .png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="banner_cnt col-lg-5">
+                    <h3>Mega Sale</h3>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url(./images/banner\ .png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="banner_cnt col-lg-5">
+                    <h3>Mega Sale</h3>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url(./images/banner\ .png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="banner_cnt col-lg-5">
+                    <h3>Mega Sale</h3>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url(./images/banner\ .png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="banner_cnt col-lg-5">
+                    <h3>Mega Sale</h3>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+   </section> 
+
+   <!--BANNER ENDS  HERE--> 
+
+   <!--FEATURED CATEGOREY SECTION START  HERE--> 
+   <section id="featuredCategory">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+      
+          <div class="category">
+            <img src="./images/category-1.png" alt="">
+            <div class="overlay row justfy-content-center align-items-center mx-0">
+              <div class="overlay_ctn text-center">
+                <h2>Beauty Cream</h2>
+                <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="category mt-4">
+            <img src="./images/category -2.png" alt="">
+
+            <div class="overlay row justfy-content-center align-items-center mx-0">
+              <div class="overlay_ctn text-center">
+                <h2>Beauty Cream</h2>
+                <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-7">
+
+          <div class="category">
+            <img src="./images/category-3.png" alt="">
+
+            <div class="overlay row justfy-content-center align-items-center mx-0">
+              <div class="overlay_ctn text-center">
+                <h2>Beauty Cream</h2>
+                <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   </section>
+
+
+   <!--FEATURED CATEGOREY SECTION ENDS  HERE-->
+
+   <!--NEW  PRODUCT SECTION START  HERE-->
+   <section id="newProduct">
+   <div class="container">
+    <h3>New Arrivals Products</h3>
+    <div class="productSlider">
+      <div class="productSlide">
+        <div class="productImg">
+          <span class="label">New</span>
+          <img src="./images/new product-1.png" alt="">
+          <div class="overlay">
+            <ul>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product_Cnt">
+          <h4>$150.65</h4>
+          <h2>Lotion Shower gel</h2>
+          <span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </div>
+       </div>
+
+       <div class="productSlide">
+        <div class="productImg">
+          <span class="label">New</span>
+          <img src="./images/new product-2.png" alt="">
+          <div class="overlay">
+            <ul>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product_Cnt">
+          <h4>$150.65</h4>
+          <h2>Lotion Shower gel</h2>
+          <span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </div>
+       </div>
+
+       <div class="productSlide">
+        <div class="productImg">
+          <span class="label">New</span>
+          <img src="./images/new product-3.png" alt="">
+          <div class="overlay">
+            <ul>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product_Cnt">
+          <h4>$150.65</h4>
+          <h2>Lotion Shower gel</h2>
+          <span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </div>
+       </div>
+
+       <div class="productSlide">
+        <div class="productImg">
+          <span class="label">New</span>
+          <img src="./images/new product-4.png" alt="">
+          <div class="overlay">
+            <ul>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+              <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product_Cnt">
+          <h4>$150.65</h4>
+          <h2>Lotion Shower gel</h2>
+          <span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </div>
+       </div>
+    </div>
+
+    <div class="arrows">
+      <div class="leftArrows"><a href=""><i class="fa-solid fa-angle-left"></i></a></div>
+      <div class="rightArrows"><a href=""><i class="fa-solid fa-angle-right"></i></a></div>
+    </div>
+    
+     
+      </div>
+
+   </section>
+
+   <!--NEW  PRODUCT SECTION ENDS  HERE--> 
+
+   <!--DISCOUNT SECTION START  HERE--> 
+     <section id="discount">
+     
+      <div class="row">
+        <div class="discount_cnt col-6">
+          <h2>Get Up To 35% Off all
+            Bestzzzzzzzzzzzz Spa Cosmetics
+            Cream</h2>
+          <p>Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
+          <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+      </div>
+    
+     </section>
+
+   <!--DISCOUNT SECTION ENDS  HERE--> 
+
+   <!--BEST SELLER PRODUCT SECTION START  HERE--> 
+    <section id="bestSellPdt">
+    
+      <div class="container">
+        <h3>Best Seller Products</h3>
+        <div class="productSlider">
+          <div class="productSlide">
+            <div class="productImg">
+              <span class="label">-45%</span>
+              <img src="./images/best seller-1.jpg" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                    href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product_Cnt">
+              <h4>$150.65</h4>
+              <h2>Lotion Shower gel</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <span class="label">Sale</span>
+              <img src="./images/best seller-2.jpg" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                    href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product_Cnt">
+              <h4>$250.65</h4>
+              <h2>Argan Cream Body Butter</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <img src="./images/best seller-3.jpg" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                    href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product_Cnt">
+              <h4>$175.65</h4>
+              <h2>Compact Face Powder</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <span class="label">New</span>
+              <img src="./images/best seller-4.jpg" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to cart" data-bs-placement="left"
+                    href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Wishlist" data-bs-placement="left" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Preview" data-bs-placement="left" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add to Statics" data-bs-placement="left" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product_Cnt">
+              <h4>$75.65</h4>
+              <h2>Manicure Gel nails, makeup</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+        </div>
+        
+        <div class="productSlider">
+          <div class="productSlide">
+            <div class="productImg">
+              <span class="label">Sale</span>
+              <img src="./images/best seller-5.jpg" alt="">
+            </div>
+            <div class="product_Cnt">
+              <h4>$350.65</h4>
+              <h2>Perfumes s, Orlane Paris</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <img src="./images/best seller-6.jpg" alt="">
+            </div>
+            <div class="product_Cnt">
+              <h4>$460.65</h4>
+              <h2>Natural skin care Cleanser</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <span class="label">New</span>
+              <img src="./images/best seller-7.jpg" alt="">
+            </div>
+            <div class="product_Cnt">
+              <h4>$320.65</h4>
+              <h2>Argan oil Hair conditioner</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+    
+           <div class="productSlide">
+            <div class="productImg">
+              <span class="label">New</span>
+              <img src="./images/best seller-8.jpg" alt="">
+            </div>
+            <div class="product_Cnt">
+              <h4>$185.65</h4>
+              <h2>Lip balm Oriflame Cream</h2>
+              <span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </div>
+           </div>
+        </div>
+        <div class="button"><a href="#">See All Products  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a></div>
+        
+         
+          </div>
+    </section>
+
+
+   <!--BEST SELLER PRODUCT SECTION ENDS  HERE--> 
+
+
+   <!--LETEST NEWS SECTION START  HERE--> 
+    
+<section id="daydeals">
+  <div class="container_dayd">
+    <h3>Deals Of The Days</h3>
+  
+  <div class="container">
+    <h2 class="Coundown">
+      <ul>
+          <li>
+              <span class="days">14</span> : days
+            
+          </li>
+          
+          <li>
+              <span class="hours">5</span>: hours
+          </li>
+          <li>
+              <span class="minuts">20</span>: minuts
+          </li>
+          <li>
+              <span class="sec">20</span>: sec
+          </li>
+      </ul>
+      
+  </h2>
+    <div class="row">
+      <div class="fairnessCream col-6">
+       <h6>Fairness Cream</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+      <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+
+
+      <div class="bodyLotions col-6">
+       <h6>Body Lotions</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+       <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  </div>
+  <div class="container_dayd">
+    <h3>Deals Of The Days</h3>
+  
+  <div class="container">
+    <h2 class="Coundown">
+      <ul>
+          <li>
+              <span class="days">14</span> : days
+            
+          </li>
+          
+          <li>
+              <span class="hours">5</span>: hours
+          </li>
+          <li>
+              <span class="minuts">20</span>: minuts
+          </li>
+          <li>
+              <span class="sec">20</span>: sec
+          </li>
+      </ul>
+      
+  </h2>
+    <div class="row">
+      <div class="fairnessCream col-6">
+       <h6>Fairness Cream</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+      <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+
+
+      <div class="bodyLotions col-6">
+       <h6>Body Lotions</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+       <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  </div>
+  <div class="container_dayd">
+    <h3>Deals Of The Days</h3>
+  
+  <div class="container">
+    <h2 class="Coundown">
+      <ul>
+          <li>
+              <span class="days">14</span> : days
+            
+          </li>
+          
+          <li>
+              <span class="hours">5</span>: hours
+          </li>
+          <li>
+              <span class="minuts">20</span>: minuts
+          </li>
+          <li>
+              <span class="sec">20</span>: sec
+          </li>
+      </ul>
+      
+  </h2>
+    <div class="row">
+      <div class="fairnessCream col-6">
+       <h6>Fairness Cream</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+      <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+
+
+      <div class="bodyLotions col-6">
+       <h6>Body Lotions</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+       <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  </div>
+  <div class="container_dayd">
+    <h3>Deals Of The Days</h3>
+  
+  <div class="container">
+    <h2 class="Coundown">
+      <ul>
+          <li>
+              <span class="days">14</span> : days
+            
+          </li>
+          
+          <li>
+              <span class="hours">5</span>: hours
+          </li>
+          <li>
+              <span class="minuts">20</span>: minuts
+          </li>
+          <li>
+              <span class="sec">20</span>: sec
+          </li>
+      </ul>
+      
+  </h2>
+    <div class="row">
+      <div class="fairnessCream col-6">
+       <h6>Fairness Cream</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+      <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+
+
+      <div class="bodyLotions col-6">
+       <h6>Body Lotions</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+       <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  </div>
+  <div class="container_dayd">
+    <h3>Deals Of The Days</h3>
+  
+  <div class="container">
+    <h2 class="Coundown">
+      <ul>
+          <li>
+              <span class="days">14</span> :days
+            
+          </li>
+          
+          <li>
+              <span class="hours">5</span> :hours
+          </li>
+          <li>
+              <span class="minuts">20</span> :minutes
+          </li>
+          <li>
+              <span class="sec">20</span> :sec
+          </li>
+      </ul>
+      
+  </h2>
+    <div class="row">
+      <div class="fairnessCream col-6">
+       <h6>Fairness Cream</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+      <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+
+
+      <div class="bodyLotions col-6">
+       <h6>Body Lotions</h6>
+       <h2>Get Up To 35% Off</h2>
+       <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+       <h5>$256.35 <span>$356.35</span></h5>
+       <a href="#">Shop Now  <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  </div>
+  
+  </section>
+   
+   <!--LETEST NEWS SECTION ENDS  HERE--> 
+   <!--SPECIAL OFFER SECTION START  HERE--> 
+  
+   <!--SPECIAL OFFER SECTION ENDS  HERE--> 
+
+   <!--MAIN SECTION ENDS HERE--> 
+           
+
+
+   <!--JQUERY JS-->
+    <script src="./js/jquery.min.js"></script>
+    <!--FONTAWESOME JS-->
+    <script src="./js/all.min.js"></script>
+    <!--BOOTSTRAP JS-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--COUNDOWN JS-->
+    <SCript src="./js/jquery.countdown.min.js"></SCript>
+    <!--VENOBOX JS-->
+    <SCript src="./js/venobox.min.js"></SCript>
+    <!--CUSTOM JS-->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/apps.js"></script>
+</body>
+</html>
